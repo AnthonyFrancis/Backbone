@@ -1,3 +1,53 @@
-<%= link_to "Home", root_path %>
-<%= link_to "Feature", features_path %>
-<%= link_to "Contact", contact_path %>
+<div class="bloc bloc-fill-screen bg-ebook-20image l-bloc" id="bloc-0">
+	<div class="container fill-bloc-top-edge">
+		<div class="row">
+			<div class="col-12">
+				<nav class="navbar navbar-light row navbar-expand-md">
+					<a class="navbar-brand" href="index.html">Company</a>
+					<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0 mr-md-0 ml-auto" data-toggle="collapse" data-target=".navbar-1" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse navbar-1">
+						<ul class="site-navigation nav navbar-nav ml-auto">
+							<li class="nav-item">
+								<%= link_to "Home", root_path %>
+							</li>
+							<li class="nav-item">
+								<%= link_to "Feature", features_path %>
+							</li>
+							<li class="nav-item">
+								<a href="https://www.amazon.co.uk/dp/B07KSNDXGT">Buy Now</a>
+							</li>
+							<li class="nav-item">
+								<%= link_to "Contact", contact_path %>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 hero-first-col-mb">
+				<h1 class="mg-md text-center h1-style">
+					Hoki Care Posture <br>Corrector
+				</h1>
+				<h3 class="mg-md float-none text-center">
+					In these days we use computers, laptops and our phones what can cause a bad posture by slouching over them. Do something about this now
+				</h3>
+				<div class="text-center">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container fill-bloc-bottom-edge">
+		<div class="row">
+			<div class="col-12">
+				<div class="text-center">
+					<a href="#" data-scroll-speed="1000" onclick="scrollToTarget('0',this)"><span class="fa fa-angle-down icon-md animated bounce animDelay08"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
