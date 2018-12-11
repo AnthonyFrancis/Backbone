@@ -3,12 +3,15 @@
 		<div class="row">
 			<div class="col-12">
 				<nav class="navbar navbar-light row navbar-expand-md">
-					<a class="navbar-brand" href="index.html">Company</a>
+					<a class="navbar-brand " href="home.html">
+
+						<%= image_tag("Logo.png", :size => "150x50") %>
+						</a>
 					<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0 mr-md-0 ml-auto" data-toggle="collapse" data-target=".navbar-1" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse navbar-1">
-						<ul class="site-navigation nav navbar-nav ml-auto">
+						<ul class="site-navigation nav navbar-nav ml-auto colour-nav">
 							<li class="nav-item">
 								<%= link_to "Home", root_path %>
 							</li>
