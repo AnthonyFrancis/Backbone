@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   get "features" => "pages#features"
   get "contact" => "pages#contact"
   get "ebook" => "pages#ebook"
+
+  resources :contacts, only: [:new, :create]
 end

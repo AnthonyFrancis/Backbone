@@ -1,0 +1,100 @@
+<div class="bloc bloc-fill-screen bg-ebook-20image l-bloc" id="bloc-0">
+	<div class="container fill-bloc-top-edge">
+		<div class="row">
+			<div class="col-12">
+				<nav class="navbar navbar-light row navbar-expand-md">
+					<a class="navbar-brand " href="/">
+
+						<%= image_tag("Logo.png", :size => "150x50") %>
+						</a>
+					<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0 mr-md-0 ml-auto" data-toggle="collapse" data-target=".navbar-1" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse navbar-1">
+						<ul class="site-navigation nav navbar-nav ml-auto colour-nav">
+							<li class="nav-item">
+								<%= link_to "Home", root_path %>
+							</li>
+							<li class="nav-item">
+								<%# link_to "Feature", features_path %>
+							</li>
+							<li class="nav-item">
+								<a href="https://www.amazon.co.uk/dp/B07KSNDXGT">Buy Now</a>
+							</li>
+							<li class="nav-item">
+								<%= link_to "Contact", contact_path %>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 offset-lg-3">
+				<h1 class="mg-md colour text-center">
+					Contact our team
+				</h1>
+				<h4 class="mg-md colour text-center">
+					Still have questions? You are more than welcomed to contact us and we will be in touch with you shortly. 
+				</h4>			
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container fill-bloc-bottom-edge">
+		<div class="row">
+			<div class="col-12">
+				<div class="text-center">
+					<a href="#" data-scroll-speed="1000" onclick="scrollToTarget('0',this)"><span class="fa fa-angle-down icon-md animated bounce animDelay08"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-0 END -->
+
+<!-- bloc-1 -->
+<div class="bloc l-bloc " id="bloc-1">
+	<div class="container bloc-lg">
+		<div class="row">
+			<div class="col-lg-6 offset-lg-3 offset-md-2 col-md-8">
+				<form id="form_29838" novalidate>
+					<%= form_for @contact do |f| %>
+						<%= f.label :name %>
+						<%= f.text_field :name, class: "form-control", required: true %>
+
+						<br>
+
+						<%= f.label :email %>
+						<%= f.email_field :email, class: "form-control", required: true %>
+
+						<br>
+
+						<%= f.label :message %>
+						<%= f.text_area :message, class: "form-control", as: :text %>
+
+						<div class="hidden">
+							<%= f.label :nickname %>
+							<%= f.text_field :nickname, hint: 'leave this field blank' %>
+						</div>
+
+						<%= f.submit 'Send Message', class: "bloc-button btn btn-d btn-lg btn-block" %>
+					<% end %>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-1 END -->
+
+<!-- bloc-4 -->
+<div class="bloc bgc-black d-bloc " id="bloc-4">
+	<div class="container bloc-lg">
+		<div class="row">
+		
+		</div>
+	</div>
+</div>
+<!-- bloc-4 END -->

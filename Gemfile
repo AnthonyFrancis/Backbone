@@ -14,6 +14,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'popper_js', '~> 1.14.5'
+gem 'mail_form'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
