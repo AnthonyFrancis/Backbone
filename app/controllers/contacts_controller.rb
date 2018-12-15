@@ -5,7 +5,7 @@ def new
 end
 
 def create
-	@contact = Contact.new[:contact]
+	@contact = Contact.new(params[:contact])
 	@contact.request = request
 	if @contact.deliver
 		flash.now[:error] = nil
