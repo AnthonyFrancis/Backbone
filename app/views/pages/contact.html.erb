@@ -1,1 +1,58 @@
-contact.html.erb
+<div class="bloc bloc-fill-screen bg-ebook-20image l-bloc" id="bloc-0">
+	<div class="container fill-bloc-top-edge">
+		<div class="row">
+			<div class="col-12">
+				<nav class="navbar navbar-light row navbar-expand-md">
+					<a class="navbar-brand " href="/">
+
+						<%= image_tag("Logo.png", :size => "150x50") %>
+						</a>
+					<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0 mr-md-0 ml-auto" data-toggle="collapse" data-target=".navbar-1" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse navbar-1">
+						<ul class="site-navigation nav navbar-nav ml-auto colour-nav">
+							<li class="nav-item">
+								<%= link_to "Home", root_path %>
+							</li>
+							<li class="nav-item">
+								<%= link_to "Feature", features_path %>
+							</li>
+							<li class="nav-item">
+								<a href="https://www.amazon.co.uk/dp/B07KSNDXGT">Buy Now</a>
+							</li>
+							<li class="nav-item">
+								<%= link_to "Contact", contact_path %>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 offset-lg-3">
+				<h1 class="mg-md colour text-center">
+					Contact our team
+				</h1>
+				<h4 class="mg-md colour text-center">
+					Still have questions? You are more than welcomed to leave your contact info and we will be in touch shortly. 
+				</h4>			
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+
+<!-- <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script> -->
+<!--End mc_embed_signup-->
