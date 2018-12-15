@@ -41,8 +41,12 @@ a:hover{text-decoration: none; cursor:pointer;}
 
 /* Sizes */
 
-.bloc-sm{
-	padding:20px 50px;
+.bloc-lg{
+	padding:100px 50px;
+}
+
+.bloc-lg{
+	padding:100px 50px;
 }
 
 /* = Full Screen Blocs 
@@ -223,6 +227,11 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 
 /* Bloc image backgrounds */
+
+
+.bgc-black{
+	background-color:#000000;
+}
 
 .bg-ebook-20image{
 	background-image:
